@@ -18,4 +18,9 @@ public partial class Form1 : Form
     {
         return numToCheck >= minValue && numToCheck <= maxValue;
     }
+
+    private void buttonCheckNumber_Click(object sender, EventArgs e)
+    {
+        
+    }
 }

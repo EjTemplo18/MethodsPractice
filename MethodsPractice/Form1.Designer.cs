@@ -28,12 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            labelEnterANumber = new Label();
+            textBoxNumberInput = new TextBox();
+            buttonCheckNumber = new Button();
+            SuspendLayout();
+            // 
+            // labelEnterANumber
+            // 
+            labelEnterANumber.AutoSize = true;
+            labelEnterANumber.Location = new Point(48, 122);
+            labelEnterANumber.Name = "labelEnterANumber";
+            labelEnterANumber.Size = new Size(116, 20);
+            labelEnterANumber.TabIndex = 0;
+            labelEnterANumber.Text = "Enter a Number:";
+            // 
+            // textBoxNumberInput
+            // 
+            textBoxNumberInput.Location = new Point(185, 119);
+            textBoxNumberInput.Name = "textBoxNumberInput";
+            textBoxNumberInput.Size = new Size(125, 27);
+            textBoxNumberInput.TabIndex = 1;
+            // 
+            // buttonCheckNumber
+            // 
+            buttonCheckNumber.Location = new Point(100, 152);
+            buttonCheckNumber.Name = "buttonCheckNumber";
+            buttonCheckNumber.Size = new Size(142, 40);
+            buttonCheckNumber.TabIndex = 2;
+            buttonCheckNumber.Text = "Check Number";
+            buttonCheckNumber.UseVisualStyleBackColor = true;
+            buttonCheckNumber.Click += buttonCheckNumber_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Text = "Form1";
+            ClientSize = new Size(367, 304);
+            Controls.Add(buttonCheckNumber);
+            Controls.Add(textBoxNumberInput);
+            Controls.Add(labelEnterANumber);
+            Name = "Form1";
+            Text = "Number Checker";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label labelEnterANumber;
+        private TextBox textBoxNumberInput;
+        private Button buttonCheckNumber;
     }
 }
