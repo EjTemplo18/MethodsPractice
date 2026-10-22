@@ -21,6 +21,15 @@ public partial class Form1 : Form
 
     private void buttonCheckNumber_Click(object sender, EventArgs e)
     {
-        
+        int number = int.Parse(textBoxNumberInput.Text);
+
+        if (IsWithinRange(number, 1, 20))
+        { 
+            MessageBox.Show("Number is within range");
+        }
+        else
+        {
+            MessageBox.Show("Number is not within range");
+        }
     }
 }
